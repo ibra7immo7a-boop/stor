@@ -31,6 +31,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+### Recommended Vercel settings
+- Framework Preset: **Next.js**
+- Root Directory: `./`
+- Build Command: `npm run build`
+- Output Directory: (leave empty, Vercel detects it)
+
+### Environment variables
+Add these values in Vercel's Environment Variables panel if your app depends on them:
+
+- `NEXT_PUBLIC_API_URL`
+- `API_BASE_URL`
+- `DATABASE_URL`
+- `JWT_SECRET`
+- `JWT_EXPIRES`
+
+> If you are only deploying the frontend, `NEXT_PUBLIC_API_URL` is the most important variable.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
